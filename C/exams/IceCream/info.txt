@@ -1,0 +1,2 @@
+C1;Strawberry Shine;15;3.75leva
+G6;Blueberry Cream;6;3.90leva
