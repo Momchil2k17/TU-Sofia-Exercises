@@ -117,6 +117,7 @@ int findIceCreamByCode(const char* code) {
             break;
         }
         name[nameLength] = '\0'; 
+        printf("Name: %s\n", name);
         
         if (fread(&weight, sizeof(int), 1, file) != 1) {
             break;
