@@ -106,17 +106,25 @@ Treatement* add_new_treatement(Treatement* history, int* count) {
     if(newTreatement.date[strlen(newTreatement.date) - 1] == '\n') {
         printf("problem\n");
         newTreatement.date[strlen(newTreatement.date) - 1] = '\0'; // Remove newline character
+    }else{
+        int ch;
+        while ((ch = getchar()) != '\n' && ch != EOF);
     }
-    while (getchar() != '\n'); // Clear the input buffer because the date is fixed length
     printf("Patient: ");
     fgets(newTreatement.patient, sizeof(newTreatement.patient), stdin);
     if(newTreatement.patient[strlen(newTreatement.patient) - 1] == '\n') {
         newTreatement.patient[strlen(newTreatement.patient) - 1] = '\0'; // Remove newline character
+    }else{
+        int ch;
+        while ((ch = getchar()) != '\n' && ch != EOF);
     }
     printf("Diagnose: ");
     fgets(newTreatement.diagnose, sizeof(newTreatement.diagnose), stdin);
     if(newTreatement.diagnose[strlen(newTreatement.diagnose) - 1] == '\n') {
         newTreatement.diagnose[strlen(newTreatement.diagnose) - 1] = '\0'; // Remove newline character
+    }else{
+        int ch;
+        while ((ch = getchar()) != '\n' && ch != EOF);
     }
 
     Treatement* tempHistory = realloc(history, (*count + 1) * sizeof(Treatement));
