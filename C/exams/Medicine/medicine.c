@@ -128,7 +128,7 @@ Medicine* deleteMedicineByNameAndDate(Medicine* medicines, int* count, char* nam
         return NULL;    
     }
     if (*count < 1) {
-        printf("Error: %d is wrong value for medicineArraySize\n", count);
+        printf("Error: %d is wrong value for medicineArraySize\n", *count);
         return NULL;    
     }
     if (strlen(date) != 7) {

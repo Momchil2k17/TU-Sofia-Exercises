@@ -41,7 +41,7 @@ int main(){
     createBinaryFileWithProducts();
     Product* products = NULL;
     int n = 0;  
-    while((n<=1) || (n>=30)){
+    while((n<=10) || (n>=30)){
         printf("Enter number of products (10-30): ");
         scanf("%d", &n);
     }
